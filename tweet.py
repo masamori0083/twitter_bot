@@ -15,7 +15,7 @@ api = tweepy.API(auth)
 ran = random.sample(range(999), k=1)
 tweet = f"This is a test from local {ran}"
 
-# update_with_mediaメソッドはない→update_status_with_media
+# update_with_mediaメソッドはない→update_status_with_media。tweepyのバージョンに注意
 
 api.update_status_with_media(status=tweet,
                              filename='test_data/SA001.jpeg')
